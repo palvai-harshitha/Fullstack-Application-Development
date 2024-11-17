@@ -1,0 +1,162 @@
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Books container styles */
+.books-container {
+  margin: 150px 40px 40px; /* Increased top margin for spacing from header */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 160px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual book box styles */
+.book-box {
+  width: 26%;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-box h3 {
+  margin: 6px 0 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.book-box h4 {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.book-box p {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.user-name {
+  margin-top: 6px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Add Books button container */
+.add-books-container {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.add-books-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-books-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-books-button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+/* Pagination container styles */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.my-3 {
+  margin: 1rem 0; /* Adjust spacing above and below */
+}
+
+/* Badge styling for current page display */
+.badge {
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+}
+
+/* Pagination buttons container */
+.d-flex > div {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Spacing between buttons */
+}
+
+/* Pagination button styles */
+.btn {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border: 1px solid #007bff;
+  background-color: #fff;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+.btn-outline-primary.active {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Disabled button styles */
+.btn-outline-primary:disabled {
+  color: #6c757d;
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  cursor: not-allowed;
+}
